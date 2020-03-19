@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="alarme">
+        <source src="alarme.ogg" type="audio/ogg">
+        <source src="alarme.mp3" type="audio/mpeg">
+    </audio>
+    <a href="#"><div id="cabecalho"><h1>POMODORO CLOCK</h1></div></a>
+    <div id="corpo">
+        <div id="tomate">
+            <div id="timer">
+                <p id="temporizador">30:00</p>
+            </div>
+        </div>
+        <div id="control">
+            <input id="play" class="acionador" type="button" value="" onclick="startCounting()">
+            <input id="pause" class="acionador" type="button" value="" onclick="pauseCounting()">
+            <input id="reset" class="acionador" type="button" value="" onclick="resetCounting()">
+        </div>
+        <div id="modificadores">
+            <div id="maistempo">
+                <p class="indicador">TEMPO</p>
+                <input id="maistempo" type="button" value="+" class= "mais" onclick="incrementaTempo()">
+                <input id="entradatempo" class="entrada" type="number" value="30" min="1" readonly>               
+                <input id="menostempo" type="button" value="-" class= "menos" onclick="decrementaTempo()">
+            </div>
+            <div id="maisintervalo">
+                <p class="indicador">INTERVALO</p>
+                <input id="maisintervalo" type="button" value="+" class= "mais" onclick="incrementaIntervalo()"> 
+                <input id="entradaintervalo" class="entrada" type="number" value="5" min="1" readonly>               
+                <input id="menosintervalo" type="button" value="-" class= "menos" onclick="decrementaIntervalo()">
+            </div>
+            <div id="clear">
+
+        </div>
+    </div>
+    <div id="rodape">
+        <p>Samuel Carlos&trade;</p>
+    </div>
+    <script src="jspomodoro.js"></script>
+</body>
+</html>

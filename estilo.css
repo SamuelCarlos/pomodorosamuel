@@ -1,0 +1,182 @@
+body {
+    background: rgb(244,201,201);
+    background: radial-gradient(circle, rgba(244,201,201,1) 0%, rgba(255,187,187,1) 60%, rgba(255,113,113,1) 100%);
+}
+
+div#cabecalho {
+    text-align: center;
+    font: normal 50pt;
+    font-family: 'Baloo Chettan 2', cursive;
+    background: rgba(121, 1, 1, 0.658);
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+}
+
+div#tomate {
+    margin: auto;
+    margin-bottom: 0px;
+    background-image: url("tomate.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+    max-width: 300px;
+}
+
+div#timer input.acionador {
+    display: inline-block;
+    
+}
+
+div#timer p{
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 28pt;
+    color: white;
+    text-align: center;
+    line-height: 360px;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: #000; 
+}
+
+div#modificadores {
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 12pt;
+    width: 100%;
+    max-width: 150px;
+    height: 50px;
+    margin: auto;
+}
+
+div#maistempo {
+    background: rgba(121, 1, 1, 0.658);
+    width: 100%;
+    max-width: 70px;
+    margin: auto;
+    float: left;
+    color: white;
+    border-radius: 5px;
+}
+
+div#maisintervalo {
+    background: rgba(121, 1, 1, 0.658);
+    width: 100%;
+    max-width: 70px;
+    margin: auto;
+    float: right;
+    color: white;
+    border-radius: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input.entrada{
+    border-style: none;
+    width: 100%;
+    text-align: center;
+    background: rgba(121, 1, 1, 0);
+    color: white;
+    cursor: default;
+}
+
+input.mais {
+    width: 100%;
+    border-style: none;
+    background: rgba(121, 1, 1, 0);
+    color: white;
+}
+
+input.menos {
+    width: 100%;
+    border-style: none;
+    background: rgba(121, 1, 1, 0);
+    color: white;
+}
+
+div#control {
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+
+input.acionador {
+    background: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input#play {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-width: 17px 0px 17px 30px;
+    padding: 0px;
+    border-color: transparent transparent transparent rgb(121, 1, 1);
+}
+
+input#pause {
+    width: 34px;
+    height: 34px;
+    border-style: double;
+    border-width: 0px 0px 0px 25px;
+    border-color:rgb(121, 1, 1);
+}
+
+input#reset {
+    background-image: url("reset.png");
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 34px;
+    border-style: none;
+    margin-left: -4px;
+}
+
+div p.indicador{
+    text-align: center;
+    font-size: 10pt;
+    margin: 0px;
+    clear: both;
+}
+
+div p.mostrador{
+    text-align: center;
+    font-size: 18pt;
+    margin: 0px;
+}
+
+
+div#rodape {
+    text-align: center;
+    font: normal 50pt;
+    font-family: 'Baloo Chettan 2', cursive;
+    clear: both;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+:focus {
+    outline:none;
+}
+
+input.mais:hover {
+    cursor: pointer;
+}
+
+input.menos:hover {
+    cursor: pointer;
+}
+
+input.acionador:hover {
+    cursor: pointer;
+}
